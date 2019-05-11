@@ -11,12 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'IndexController@index')->name('index');
 
+Route::get('/contact', function () {
+  return view('layouts.contact');
+})->name('contact');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
+Route::get('/portfolio', 'PortfolioController@portfolio')->name('portfolio');

@@ -1,43 +1,6 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Light Evolutions</title>
-    <meta name="description" content="A Digital Agency Website landing page template built by TemplateFlip.com"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
-    <link href="{{ asset('/css/all.css')}}" rel="stylesheet">
-    <link href="{{ asset('/css/aos.css')}}" rel="stylesheet">
-    <link href="{{ asset('/css/ekko-lightbox.css')}}" rel="stylesheet">
-    <link href="{{ asset('/css/bootstrap.css')}}" rel="stylesheet">
-    <link href="{{ asset('/css/main.css')}}" rel="stylesheet">
-  </head>
-  <body id="top">
-    <header>
-      <div class="container pt-4">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0"><a class="text-white navbar-brand" href="#">Light Evolutions</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#da-navbarNav" aria-controls="da-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse text-uppercase" id="da-navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#">Home</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#services">About Us</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#projects">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#gallery">Our Team</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <div class="da-home-page-text" data-aos="fade-right" data-aos-duration="1000">
-        <div class="container">
-          <div class="col-md-10 col-sm-12 px-0 mx-0">
-            <h2 class="display-3" style="margin-left:-6px;">Light Evolutions</h2>
-            <h3 class="h5 mt-3">About company</h3><a class="smooth-scroll btn btn-outline-light mt-4" href="#learn">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </header>
+@extends('layouts.main')
+
+@section('content')
     <div class="page-content">
       <div>
 <div class="da-section da-work bg-secondary" id="learn">
@@ -377,52 +340,7 @@
     </div>
   </div>
 </div>
-<div class="da-contact" id="contact">
-  <div class="da-contact-detail" data-aos="zoom-in" data-aos-duration="1000">
-    <div class="container">
-      <div class="card py-4 px-4">
-        <div class="h4 pb-4">Contact Us</div>
-        <div class="row">
-          <div class="col-md-7 col-sm-12 mb-3">
-            <div class="da-contact-message">
-              <form action="https://formspree.io/your@email.com" method="POST">
-                <div class="row">
-                  <div class="col-md-6 col-sm-12 mb-3">
-                    <input class="mr-3 form-control" type="text" name="first-name" placeholder="*First Name" required="required"/>
-                  </div>
-                  <div class="col-md-6 col-sm-12 mb-3">
-                    <input class="form-control" type="text" name="last-name" placeholder="Last Name"/>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col">
-                    <input class="form-control" type="text" name="Subject" placeholder="*Subject" required="required"/>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col">
-                    <input class="form-control" type="email" name="_replyto" placeholder="*E-mail" required="required"/>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col">
-                    <textarea class="form-control" name="message" placeholder="*Your Message" rows="4" required="required"></textarea>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <button class="btn btn-primary" type="submit">Send</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <p>Non dis torquent conubia neque duis enim lectus, dictumst bibendum nam lacinia faucibus sollicitudin consequat tortor, mattis taciti sem arcu pellentesque quisque.</p>
-            <p><b>Address:</b> 568, Hill Road, USA</p>
-            <p><b>Phone:</b> +1 802-457-1144</p>
-            <p><b>Email:</b> info@example.com</p>
-            <p><b>Fax:</b> +1 502-257-1156</p>
+
           </div>
         </div>
       </div>
@@ -430,40 +348,4 @@
   </div>
 </div></div>
     </div>
-    <footer class="bg-secondary da-section">
-      <div class="container text-white">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="h2">Hello!</div>
-            <p class="mb-0">info@digitalagency.com</p>
-            <p>+1 502-257-1157</p>
-          </div>
-          <div class="col-md-4">
-            <div class="h6 pb-2">Follow Us</div>
-            <ul>
-              <li><a class="da-social-link" href="#">Twitter</a></li>
-              <li><a class="da-social-link" href="#">Facebook</a></li>
-              <li><a class="da-social-link" href="#">Instagram</a></li>
-              <li><a class="da-social-link" href="#">Google</a></li>
-              <li><a class="da-social-link" href="#">Behance</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <div class="h6 pb-2">Copyright</div>
-            <p>&copy; 2018 Digital Agency. All rights reserved.</p>
-            <p>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div id="scrolltop">
-      <button class="btn btn-primary"><span class="icon"><i class="fas fa-angle-up fa-2x"></i></span></button>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script src="{{ asset('/js/aos.js') }}"></script>
-    <script src="{{ asset('/js/ekko-lightbox.min.js') }}"></script>
-    <script src="{{ asset('/js/main.js') }}"></script>
-  </body>
-</html>
+@endsection
