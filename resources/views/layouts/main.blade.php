@@ -12,29 +12,60 @@
     <link href="{{ asset('/css/ekko-lightbox.css')}}" rel="stylesheet">
     <link href="{{ asset('/css/bootstrap.css')}}" rel="stylesheet">
     <link href="{{ asset('/css/main.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   </head>
   <body id="top">
         <!--// Header \\-->
     <header>
-      <div class="container pt-4">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-0">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#da-navbarNav" aria-controls="da-navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse text-uppercase" id="da-navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link smooth-scroll" href={{ route('index') }}>Home</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#services">About Us</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href={{ route('portfolio') }}>Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#gallery">Our Team</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href={{ route('contact') }}>Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      <nav class="navbar navbar-dark navbar-expand-sm position-fixed w-100">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-list-2">
+          <ul class="navbar-nav align-items-center">
+             <li class="nav-item">
+                <a class="nav-link smooth-scroll" href={{ route('index') }}>
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" href="#services">
+                  About Us
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" href={{ route('portfolio') }}>
+                  Portfolio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" href="#gallery">
+                  Our Team
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" href={{ route('contact') }}>
+                  Contact
+                </a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" rel="nofollow" href="//www.linkedin.com/company/alloiz/about/">
+                  <i class="font_25px fab fa-linkedin"></i>
+                </a>                  
+              </li>
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" rel="nofollow" href="//www.facebook.com/Light-Evolutions-1229699813871544/">
+                  <i class="font_25px fab fa-facebook-square"></i>
+                </a>                  
+              </li>      
+          </ul>
+        </div>
+      </nav>
       <div class="da-home-page-text" data-aos="fade-right" data-aos-duration="1000">
         <div class="container">
           <div class="col-md-10 col-sm-12 px-0 mx-0">
             <h2 class="display-3" style="margin-left:-6px;">Light Evolutions</h2>
-            <h3 class="h5 mt-3">About company</h3><a class="smooth-scroll btn btn-outline-light mt-4" href="#learn">Learn More</a>
+            <h3 class="h5 mt-3">Challenges acceptable</h3><a class="smooth-scroll btn btn-outline-light mt-4" href="#learn">Learn More</a>
           </div>
         </div>
       </div>
@@ -49,15 +80,9 @@
     <footer class="bg-secondary da-section">
       <div class="container text-white">
         <div class="row">
-          <div class="col-md-4">
-            <div class="h2">Hello!</div>
-            <p class="mb-0">info@digitalagency.com</p>
-            <p>+1 502-257-1157</p>
+          <div class="col-md-12 contacts">
+            <p class="mb-0"> Contact Us Ligthevolutionsinfo@gmail.com</p>
           </div>
-          <div class="col-md-4">
-          </div>
-          <div class="col-md-4">
-        </div>
       </div>
     </footer>
     <div id="scrolltop">
